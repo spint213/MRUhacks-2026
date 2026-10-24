@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://b6gr86avnadqx" path="res://Assets/5149.jpg" id="8_efxa6"]
 [ext_resource type="PackedScene" uid="uid://0rhrlkqdx0gw" path="res://mirror_popup.tscn" id="8_kek77"]
 [ext_resource type="PackedScene" uid="uid://dbvexn40wy6nx" path="res://bookshelf_popup.tscn" id="9_kek77"]
-[ext_resource type="PackedScene" uid="uid://df865v8tvyxku" path="res://Scripts/dialogue_box.tscn" id="10_4c57u"]
+[ext_resource type="PackedScene" uid="uid://df865v8tvyxku" path="res://dialogue_box.tscn" id="10_4c57u"]
 [ext_resource type="PackedScene" uid="uid://cwfywyrgbieh6" path="res://door_new.tscn" id="12_ycdy4"]
 [ext_resource type="PackedScene" uid="uid://cvn7rlcf6woil" path="res://feet.tscn" id="13_w48qg"]
 [ext_resource type="PackedScene" uid="uid://cisuhwkln7cpw" path="res://visitor_new.tscn" id="13_ycdy4"]
@@ -18,6 +18,9 @@
 [ext_resource type="PackedScene" uid="uid://d3gf18t602i8f" path="res://dost.tscn" id="16_074og"]
 [ext_resource type="PackedScene" uid="uid://caenrdnkpwkd8" path="res://l'amour.tscn" id="17_cegan"]
 [ext_resource type="PackedScene" uid="uid://bh853jmx6sd1b" path="res://bata.tscn" id="18_82xsv"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_074og"]
+load_path = "res://.godot/imported/mirror_in_room.webp-f9ed1b0fd0de9eec4a9df3ccb87df2fd.ctex"
 
 [sub_resource type="GDScript" id="GDScript_vivmo"]
 script/source = "extends Control
@@ -46,6 +49,7 @@ starting_scale = Vector2(0.2, 0.2)
 
 [node name="MirrorInRoom" parent="." unique_id=597284462 instance=ExtResource("5_lquwl")]
 position = Vector2(1780, 961)
+sprite_texture = SubResource("CompressedTexture2D_074og")
 
 [node name="CDPlayerNew" parent="." unique_id=1381272118 instance=ExtResource("6_272bh")]
 position = Vector2(109, 975)

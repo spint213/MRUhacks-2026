@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://0rhrlkqdx0gw"]
 
 [ext_resource type="Script" uid="uid://d0oyvrvpjctdn" path="res://Scripts/mirror_popup.gd" id="1_5urdc"]
-[ext_resource type="Texture2D" uid="uid://blqfp8lylsl4x" path="res://Assets/look_in_mirror.jpeg" id="2_lq16g"]
 
 [node name="MirrorPopup" type="Control" unique_id=881287159]
 layout_mode = 3
@@ -18,7 +17,6 @@ offset_left = 648.0
 offset_top = 247.0
 offset_right = 1248.0
 offset_bottom = 847.0
-texture = ExtResource("2_lq16g")
 
 [node name="ExitButton" type="Button" parent="." unique_id=420890513]
 layout_mode = 0
