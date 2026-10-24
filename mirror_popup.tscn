@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://0rhrlkqdx0gw"]
+
+[ext_resource type="Script" uid="uid://d0oyvrvpjctdn" path="res://Scripts/mirror_popup.gd" id="1_5urdc"]
+[ext_resource type="Texture2D" uid="uid://blqfp8lylsl4x" path="res://Assets/look_in_mirror.jpeg" id="2_lq16g"]
+
+[node name="MirrorPopup" type="Control" unique_id=881287159]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5urdc")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2077392406]
+layout_mode = 0
+offset_left = 648.0
+offset_top = 247.0
+offset_right = 1248.0
+offset_bottom = 847.0
+texture = ExtResource("2_lq16g")
+
+[node name="ExitButton" type="Button" parent="." unique_id=420890513]
+layout_mode = 0
+offset_left = 1218.0
+offset_top = 256.0
+offset_right = 1236.0
+offset_bottom = 287.0
+text = "X"
+
+[connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]

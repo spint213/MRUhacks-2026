@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://d3gf18t602i8f"]
+
+[ext_resource type="Script" uid="uid://c3qcxe8y1vqff" path="res://Scripts/dost.gd" id="1_b6w4o"]
+[ext_resource type="Texture2D" uid="uid://duht8tjjkedhc" path="res://Assets/book_friend.png" id="2_s2y4k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oitxs"]
+size = Vector2(142, 293)
+
+[node name="Dost" type="Area2D" unique_id=433865767]
+script = ExtResource("1_b6w4o")
+starting_scale = Vector2(1, 1)
+metadata/_custom_type_script = "uid://bh7ge84djj0m8"
+
+[node name="BookFriend" type="Sprite2D" parent="." unique_id=123512745]
+position = Vector2(-10, -114)
+texture = ExtResource("2_s2y4k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=7883170]
+position = Vector2(3, 5.5)
+shape = SubResource("RectangleShape2D_oitxs")

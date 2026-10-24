@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://5gdv3r3h24ai"]
+
+[ext_resource type="PackedScene" uid="uid://5gdv3r3h24ai" path="res://clickable.tscn" id="1_0jthp"]
+
+[node name="Clickable" unique_id=1897511411 instance=ExtResource("1_0jthp")]

@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://cvn7rlcf6woil"]
+
+[ext_resource type="Script" uid="uid://7rawqvkyvoqp" path="res://feet.gd" id="1_7flkp"]
+[ext_resource type="Texture2D" uid="uid://elr07a3tit47" path="res://Assets/5120.jpg" id="2_7flkp"]
+
+[node name="Feet" type="Area2D" unique_id=435817268]
+script = ExtResource("1_7flkp")
+sprite_texture = ExtResource("2_7flkp")
+starting_scale = Vector2(0.2, 0.2)
+metadata/_custom_type_script = "uid://bh7ge84djj0m8"

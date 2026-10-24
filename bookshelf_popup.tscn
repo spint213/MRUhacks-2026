@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dbvexn40wy6nx"]
+
+[ext_resource type="Texture2D" uid="uid://b6gr86avnadqx" path="res://Assets/5149.jpg" id="1_om6i6"]
+
+[node name="BookshelfPopup" type="Control" unique_id=1559666962]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=910588207]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_om6i6")

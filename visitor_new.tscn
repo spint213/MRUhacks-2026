@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cisuhwkln7cpw"]
+
+[ext_resource type="Script" uid="uid://cva6pjb5c6ck8" path="res://Scripts/visitor_new.gd" id="1_f42x2"]
+[ext_resource type="Texture2D" uid="uid://bww207bld8rq" path="res://Assets/sample visitor.jpeg" id="2_ht1v5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3w0oh"]
+size = Vector2(134, 102)
+
+[node name="Visitor" type="Area2D" unique_id=198928703]
+script = ExtResource("1_f42x2")
+sprite_texture = ExtResource("2_ht1v5")
+metadata/_custom_type_script = "uid://bh7ge84djj0m8"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=704123752]
+shape = SubResource("RectangleShape2D_3w0oh")

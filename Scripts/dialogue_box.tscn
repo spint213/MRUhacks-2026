@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://df865v8tvyxku"]
+
+[ext_resource type="Script" uid="uid://bihhlg5ldqshr" path="res://dialogue_box.gd" id="1_senjy"]
+
+[node name="DialogueBox" type="RichTextLabel" unique_id=489944854]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+bbcode_enabled = true
+script = ExtResource("1_senjy")
