@@ -20,7 +20,6 @@
 [ext_resource type="PackedScene" uid="uid://bh853jmx6sd1b" path="res://bata.tscn" id="18_82xsv"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_074og"]
-load_path = "res://.godot/imported/mirror_in_room.webp-f9ed1b0fd0de9eec4a9df3ccb87df2fd.ctex"
 
 [sub_resource type="GDScript" id="GDScript_vivmo"]
 script/source = "extends Control
