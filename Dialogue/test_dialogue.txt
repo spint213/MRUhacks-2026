@@ -1,0 +1,4 @@
+[center] hello, this is a text... [/center];
+[center] I am testing... [/center];
+[center] Still testing... [/center];
+[center] End of test [/center];

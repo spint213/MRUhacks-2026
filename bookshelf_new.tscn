@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://jeli6no0fqw"]
+
+[ext_resource type="Script" uid="uid://bk08n5bj2x7t1" path="res://Scripts/bookshelf_new.gd" id="1_3crbn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3crbn"]
+size = Vector2(339, 427)
+
+[node name="BookshelfNew" type="Area2D" unique_id=1707863349]
+script = ExtResource("1_3crbn")
+metadata/_custom_type_script = "uid://bh7ge84djj0m8"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=186135203]
+shape = SubResource("RectangleShape2D_3crbn")
