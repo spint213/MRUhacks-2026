@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bh853jmx6sd1b"]
+
+[ext_resource type="Script" uid="uid://b66phj0qcl6ot" path="res://Scripts/bata.gd" id="1_7equi"]
+[ext_resource type="Texture2D" uid="uid://m1c1mrbql3r3" path="res://Assets/book_kid.png" id="2_4kew4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gc8m6"]
+size = Vector2(136, 305)
+
+[node name="Bata" type="Area2D" unique_id=603445453]
+script = ExtResource("1_7equi")
+starting_scale = Vector2(1, 1)
+metadata/_custom_type_script = "uid://bh7ge84djj0m8"
+
+[node name="BookKid" type="Sprite2D" parent="." unique_id=936116104]
+position = Vector2(484, -107)
+texture = ExtResource("2_4kew4")
+
+[node name="CollisionShape" type="CollisionShape2D" parent="." unique_id=202110088]
+position = Vector2(1, 5.5)
+shape = SubResource("RectangleShape2D_gc8m6")

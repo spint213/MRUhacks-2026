@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://ca502eknreofs"]
+
+[ext_resource type="Script" uid="uid://b0mj370cxwqsu" path="res://Scripts/cd_player_new.gd" id="1_4icbc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_no62n"]
+size = Vector2(332.125, 277.625)
+
+[node name="CDPlayerNew" type="Area2D" unique_id=1381272118]
+script = ExtResource("1_4icbc")
+metadata/_custom_type_script = "uid://bh7ge84djj0m8"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=196424887]
+shape = SubResource("RectangleShape2D_no62n")
