@@ -14,6 +14,10 @@ func _ready() -> void:
 	sprite.texture = sprite_texture
 	mouse_entered.connect(_on_mouse_entered)
 	mouse_exited.connect(_on_mouse_exited)
+	SignalBus.modulate_colour.connect(modulate_colour)
+
+func modulate_colour() -> void:
+	set_modulate(GlobalColourScheme.curr_colour)
 
 func _on_mouse_entered() -> void:
 	scale *= 1.1

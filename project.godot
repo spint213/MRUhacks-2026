@@ -10,12 +10,13 @@ config_version=5
 
 [application]
 
-run/main_scene="uid://bn6b80q25bhta"
+run/main_scene="uid://co14gechjk8fw"
 config/features=PackedStringArray("4.6")
 
 [autoload]
 
 SignalBus="*uid://btx3tsk18q46v"
+GlobalColourScheme="*uid://ybhp0chxhw1n"
 
 [display]
 

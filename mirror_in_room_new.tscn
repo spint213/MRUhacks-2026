@@ -3,11 +3,12 @@
 [ext_resource type="Script" uid="uid://bxl8d6xbmsvyf" path="res://Scripts/mirror_in_room_new.gd" id="1_ugwjf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cl4s5"]
-size = Vector2(253, 210)
+size = Vector2(234.5, 414.5)
 
 [node name="MirrorInRoom" type="Area2D" unique_id=597284462]
 script = ExtResource("1_ugwjf")
 metadata/_custom_type_script = "uid://bh7ge84djj0m8"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1829390336]
+position = Vector2(-9.25, 0)
 shape = SubResource("RectangleShape2D_cl4s5")

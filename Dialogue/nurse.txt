@@ -1,0 +1,9 @@
+
+set_choices;
+"That was a good day, wasn't it?;
+"That was a lot for one day.";
+[center]5:00 PM[/center];
+[center]NURSE: "Visiting hours are over."[/center];
+choose;
+[center]NURSE: "It was."[/center];
+[center]NURSE: "It was."[/center];
