@@ -1,6 +1,12 @@
 [gd_scene format=3 uid="uid://dbvexn40wy6nx"]
 
-[ext_resource type="Texture2D" uid="uid://b6gr86avnadqx" path="res://Assets/5149.jpg" id="1_om6i6"]
+[ext_resource type="Script" uid="uid://r4kobhle6klk" path="res://Scripts/bookshelf_popup.gd" id="1_om6i6"]
+[ext_resource type="Texture2D" uid="uid://bsomn17qmw1rq" path="res://Assets_New/bookshelf.png" id="2_p7q7s"]
+[ext_resource type="Script" uid="uid://dh46pa2rx4m8n" path="res://Scripts/exit_button.gd" id="3_vm2g5"]
+[ext_resource type="Texture2D" uid="uid://b6l2837e3fqgj" path="res://Assets_New/button.png" id="4_ctnxb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ctnxb"]
+size = Vector2(227, 76)
 
 [node name="BookshelfPopup" type="Control" unique_id=1559666962]
 layout_mode = 3
@@ -9,7 +15,29 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_om6i6")
 
 [node name="Sprite" type="Sprite2D" parent="." unique_id=910588207]
+position = Vector2(-5.000002, -190.00002)
+rotation = 0.054981552
 scale = Vector2(0.6, 0.6)
-texture = ExtResource("1_om6i6")
+texture = ExtResource("2_p7q7s")
+
+[node name="ExitButton" type="Area2D" parent="." unique_id=704964250]
+z_index = 1
+position = Vector2(784, -485)
+script = ExtResource("3_vm2g5")
+sprite_texture = ExtResource("4_ctnxb")
+starting_scale = Vector2(0.1, 0.1)
+metadata/_custom_type_script = "uid://bh7ge84djj0m8"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitButton" unique_id=61607112]
+shape = SubResource("RectangleShape2D_ctnxb")
+
+[node name="Label" type="Label" parent="ExitButton" unique_id=1720113489]
+z_index = 3
+offset_left = -15.0
+offset_top = -10.0
+offset_right = 25.0
+offset_bottom = 13.0
+text = "Exit"

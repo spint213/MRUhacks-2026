@@ -1,15 +1,15 @@
 extends clickable
 
-@export var dialogue: String
-@export var costume: Texture2D
+@export var dialogue_path: String
 
 func _ready() -> void:
 	super()
 	SignalBus.visitor_enter.connect(visitor_enter)
+	dialogue_path = "res://Dialogue/l'amour.txt"
 
 func emit_clickable_signal() -> void:
 	visitor_exit()
-	SignalBus.minigame_start.emit(dialogue)
+	SignalBus.dialogue_start.emit(dialogue_path)
 
 func visitor_enter() -> void:
 	show()

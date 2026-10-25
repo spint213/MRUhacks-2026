@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://df865v8tvyxku"]
 
-[ext_resource type="Script" uid="uid://bihhlg5ldqshr" path="res://Scripts/dialogue_box.gd" id="1_senjy"]
+[ext_resource type="Script" uid="uid://bihhlg5ldqshr" path="res://Scripts/dialogue_textbox.gd" id="1_senjy"]
 
-[node name="DialogueBox" type="RichTextLabel" unique_id=489944854]
+[node name="DialogueTextbox" type="RichTextLabel" unique_id=489944854]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0

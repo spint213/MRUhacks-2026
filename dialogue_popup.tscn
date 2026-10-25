@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://bknwfgv3ch6gn"]
+
+[ext_resource type="Script" uid="uid://cvtjico4hmmjh" path="res://Scripts/dialogue_popup.gd" id="1_8ufbl"]
+[ext_resource type="PackedScene" uid="uid://df865v8tvyxku" path="res://dialogue_textbox.tscn" id="2_omt58"]
+[ext_resource type="PackedScene" uid="uid://b3hmoiq45x836" path="res://first_option.tscn" id="3_fan7c"]
+[ext_resource type="Texture2D" uid="uid://b6l2837e3fqgj" path="res://Assets_New/button.png" id="4_2doop"]
+[ext_resource type="PackedScene" uid="uid://df5wcbx3vvta" path="res://second_option.tscn" id="4_ow604"]
+[ext_resource type="Texture2D" uid="uid://dr3eiv4fqv1ux" path="res://Assets_New/old_lady_closeup.png" id="5_ow604"]
+
+[node name="DialoguePopup" type="Control" unique_id=1491951384]
+z_index = 999
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8ufbl")
+
+[node name="DialogueTextbox" parent="." unique_id=489944854 instance=ExtResource("2_omt58")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 381.0
+offset_top = -418.0
+offset_right = 762.0
+offset_bottom = 64.0
+grow_horizontal = 1
+grow_vertical = 1
+theme_override_font_sizes/normal_font_size = 30
+
+[node name="First" parent="." unique_id=48393896 instance=ExtResource("3_fan7c")]
+visible = false
+position = Vector2(-754, -312)
+sprite_texture = ExtResource("4_2doop")
+starting_scale = Vector2(0.3, 0.6)
+
+[node name="Second" parent="." unique_id=1871157014 instance=ExtResource("4_ow604")]
+visible = false
+position = Vector2(-756, 152)
+sprite_texture = ExtResource("4_2doop")
+starting_scale = Vector2(0.3, 0.6)
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1286375469]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("5_ow604")

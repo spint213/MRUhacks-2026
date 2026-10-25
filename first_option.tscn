@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://b3hmoiq45x836"]
+
+[ext_resource type="Script" uid="uid://dk1la7es07h3w" path="res://Scripts/first_option.gd" id="1_kbo0x"]
+[ext_resource type="Texture2D" uid="uid://cj8mt4kh87mqi" path="res://Assets/button_sample.jpeg" id="2_yukdk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0nste"]
+size = Vector2(459, 334)
+
+[node name="First" type="Area2D" unique_id=48393896]
+script = ExtResource("1_kbo0x")
+sprite_texture = ExtResource("2_yukdk")
+starting_scale = Vector2(1, 1)
+metadata/_custom_type_script = "uid://bh7ge84djj0m8"
+
+[node name="CollisionShape" type="CollisionShape2D" parent="." unique_id=1329867090]
+shape = SubResource("RectangleShape2D_0nste")
+
+[node name="Label" type="Label" parent="." unique_id=91816811]
+z_index = 3
+offset_left = -143.0
+offset_top = -79.0
+offset_right = 151.0
+offset_bottom = 27.0
+theme_override_font_sizes/font_size = 30
+autowrap_mode = 3
