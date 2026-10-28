@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dkmvx2pobe8ya"
+path="res://.godot/imported/Major 1.wav-7dc6a5afc747fd6d8c62a5706a33d5de.sample"
+
+[deps]
+
+source_file="res://Assets/Music/Major 1.wav"
+dest_files=["res://.godot/imported/Major 1.wav-7dc6a5afc747fd6d8c62a5706a33d5de.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

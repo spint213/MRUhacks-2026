@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://obq8gyayec0b"]
+
+[ext_resource type="Script" uid="uid://cob5cy46tfalj" path="res://Scripts/cd_player_popup.gd" id="1_e0mbt"]
+[ext_resource type="Texture2D" path="res://Assets/20261024_114904.jpg" id="2_fu5y7"]
+[ext_resource type="Script" uid="uid://dh46pa2rx4m8n" path="res://Scripts/exit_button.gd" id="3_fu5y7"]
+[ext_resource type="Texture2D" uid="uid://b6l2837e3fqgj" path="res://Assets/button.png" id="4_11mi1"]
+[ext_resource type="Script" uid="uid://ca8cp56apdmli" path="res://play_button.gd" id="5_1eapi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_11mi1"]
+size = Vector2(178, 68)
+
+[node name="CDPlayerPopup" type="Control" unique_id=1599848036]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_e0mbt")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1792478803]
+position = Vector2(-173, -7)
+texture = ExtResource("2_fu5y7")
+offset = Vector2(400, 142)
+
+[node name="ExitButton" type="Area2D" parent="." unique_id=24507469]
+position = Vector2(802, -402)
+script = ExtResource("3_fu5y7")
+metadata/_custom_type_script = "uid://bh7ge84djj0m8"
+
+[node name="CollisionShape" type="CollisionShape2D" parent="ExitButton" unique_id=1852499111]
+shape = SubResource("RectangleShape2D_11mi1")
+
+[node name="Sprite" type="Sprite2D" parent="ExitButton" unique_id=1217749434]
+position = Vector2(6.28233e-05, 0.99997103)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("4_11mi1")
+
+[node name="Label" type="Label" parent="ExitButton" unique_id=1512445635]
+offset_left = -16.0
+offset_top = -12.0
+offset_right = 13.0
+offset_bottom = 37.0
+text = "Exit
+"
+
+[node name="PlayButton" type="Area2D" parent="." unique_id=1827538475]
+position = Vector2(490, -407)
+script = ExtResource("5_1eapi")
+metadata/_custom_type_script = "uid://bh7ge84djj0m8"
+
+[node name="Sprite" type="Sprite2D" parent="PlayButton" unique_id=1127841493]
+position = Vector2(2.026558e-06, -2.3841858e-07)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("4_11mi1")
+
+[node name="CollisionShape" type="CollisionShape2D" parent="PlayButton" unique_id=1190335756]
+position = Vector2(-1, 0)
+shape = SubResource("RectangleShape2D_11mi1")
+
+[node name="Label" type="Label" parent="PlayButton" unique_id=1681972243]
+offset_left = -19.0
+offset_top = -11.0
+offset_right = 21.0
+offset_bottom = 12.0
+text = "Play"

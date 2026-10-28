@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://ca502eknreofs"]
+
+[ext_resource type="Script" uid="uid://b0mj370cxwqsu" path="res://Scripts/cd_player_new.gd" id="1_4icbc"]
+[ext_resource type="AudioStream" uid="uid://dkmvx2pobe8ya" path="res://Assets/Music/Major 1.wav" id="2_xv6go"]
+[ext_resource type="AudioStream" uid="uid://dj46v8jelullb" path="res://Assets/Music/Minor 1.wav" id="3_k51xo"]
+[ext_resource type="AudioStream" uid="uid://c0o1nxdum0gbm" path="res://Assets/Music/Major 2.wav" id="4_evn58"]
+[ext_resource type="AudioStream" uid="uid://dkcmg0x7ayyq7" path="res://Assets/Music/Minor 2.wav" id="5_i4scq"]
+[ext_resource type="AudioStream" uid="uid://cupbsprumjj70" path="res://Assets/Music/Major 3.wav" id="6_vk1ex"]
+[ext_resource type="AudioStream" uid="uid://cl83ksjcv72xg" path="res://Assets/Music/Minor 3.wav" id="7_yjxna"]
+[ext_resource type="AudioStream" uid="uid://dkcq4ntfncs24" path="res://Assets/Music/Major 4.wav" id="8_aj06s"]
+[ext_resource type="AudioStream" uid="uid://dxost2siwd3jf" path="res://Assets/Music/Minor 4.wav" id="9_h35kk"]
+[ext_resource type="AudioStream" uid="uid://b7d8pufagc4qn" path="res://Assets/Music/Major 5.wav" id="10_v7aiw"]
+[ext_resource type="AudioStream" uid="uid://bbvfrfqmt5ufc" path="res://Assets/Music/Minor 5.wav" id="11_uempc"]
+[ext_resource type="AudioStream" uid="uid://de22hdtk2afmi" path="res://Assets/Music/Major 6.wav" id="12_o8t30"]
+[ext_resource type="AudioStream" uid="uid://cde5sc4cig06j" path="res://Assets/Music/Minor 6.wav" id="13_eep3n"]
+[ext_resource type="AudioStream" uid="uid://t6ig1ma1t7mc" path="res://Assets/Music/HAPPY A nightingale sang in berkley - final.wav" id="14_evn58"]
+[ext_resource type="AudioStream" uid="uid://ct50xelo2n0kr" path="res://Assets/Music/A nightingale sang in berkley SAD - Complete song.wav" id="15_i4scq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_no62n"]
+size = Vector2(332.125, 277.625)
+
+[node name="CDPlayerNew" type="Area2D" unique_id=1381272118]
+script = ExtResource("1_4icbc")
+first_song_parts = Array[AudioStreamWAV]([ExtResource("2_xv6go"), ExtResource("3_k51xo")])
+second_song_parts = Array[AudioStreamWAV]([ExtResource("4_evn58"), ExtResource("5_i4scq")])
+third_song_parts = Array[AudioStreamWAV]([ExtResource("6_vk1ex"), ExtResource("7_yjxna")])
+fourth_song_parts = Array[AudioStreamWAV]([ExtResource("8_aj06s"), ExtResource("9_h35kk")])
+fifth_song_parts = Array[AudioStreamWAV]([ExtResource("10_v7aiw"), ExtResource("11_uempc")])
+sixth_song_parts = Array[AudioStreamWAV]([ExtResource("12_o8t30"), ExtResource("13_eep3n")])
+final_song = Array[AudioStreamWAV]([ExtResource("14_evn58"), ExtResource("15_i4scq")])
+metadata/_custom_type_script = "uid://bh7ge84djj0m8"
+
+[node name="CollisionShape" type="CollisionShape2D" parent="." unique_id=196424887]
+shape = SubResource("RectangleShape2D_no62n")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer2D" parent="." unique_id=105993937]
